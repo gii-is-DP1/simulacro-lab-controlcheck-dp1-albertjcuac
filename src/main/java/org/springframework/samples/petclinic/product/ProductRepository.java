@@ -23,5 +23,5 @@ public interface ProductRepository extends CrudRepository<Product, Integer> {
     List<Product> findByPriceLessThan(@Param("price") Double price);
     Optional<Product> findById(int id);
     Product findByName(String name);
-    Product save(Product p);
+  
 }
